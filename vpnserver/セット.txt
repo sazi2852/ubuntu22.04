@@ -1,0 +1,35 @@
+必須条件
+
+sudo apt install gcc
+
+sudo apt install make
+
+なんとなくのコマンドです。
+
+①　wget
+
+②　tar xzvf
+
+③　cd ./vpnserver
+
+④ make
+
+⑤　sudo mv vpnserver /usr/local
+
+⑥　cd /usr/local/vpnserver
+
+⑦　sudo chmod 600 *
+
+⑧　sudo chmod 700 vpncmd
+
+⑨　sudo chmod 700 vpnserver
+
+⑩　./vpncmd
+
+sudo vi /etc/init.d/vpnserver
+
+sudo chmod 755 /etc/init.d/vpnserver
+
+sudo systemctl enable vpnserver
+
+sudo /etc/init.d/vpnserver start
